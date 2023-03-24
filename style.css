@@ -1,0 +1,115 @@
+@font-face {
+    font-family: CopperplateGothicBoldRegular;
+    src: url(Copperplate\ Gothic\ Bold\ Regular.ttf);
+}
+body, header, #button{
+    background-color: #100b11;
+}
+header, .imgs, footer, #msg, .champ{
+    display: flex;
+    align-items: center;
+}
+header, #msg{
+    flex-direction: row;
+}
+header, .imgs, footer{
+    justify-content: space-between;
+}
+header, h1, h2, footer, input, h3{
+    font-family: CopperplateGothicBoldRegular;
+}
+header, footer{
+    color: silver;
+}
+h2, hr, h3{
+    background: linear-gradient(0deg,#f9e4b7,#d2a86c 67.77%,#bd9554 80.02%,#a8833d);
+}
+h2, h3{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: "";
+}
+.imgs, footer{
+    flex-flow: row wrap;
+}
+a:hover, input:hover{
+    filter: brightness(125%);
+}
+.imgs{
+    padding-left: 50px;
+    padding-right: 50px;
+    align-content: space-evenly;
+    margin: 0%;
+}
+body{
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    margin: 0px;
+}
+header{
+    padding: 10px 22px;
+}
+h1{
+    color: #c2a6a6;
+    font-size: 50px;
+    text-align-last: center;
+}
+h2{
+    margin-bottom: 35px;
+    margin-left: 20px;
+    font-size: 35px;
+}
+h3{
+    font-size: 30px;
+    margin-top: 2%;
+}
+hr{
+    width: 1185px; 
+    height: 1.5px;
+    margin: 50px;
+}
+li{
+    font-family: "Teko";
+    font-size: 21px;
+}
+li::marker{
+    color: #bd9554;
+}
+a{
+    text-decoration: none;
+    color: #d2a86c;
+}
+a:hover{
+    text-decoration: underline;
+}
+main{
+    margin: 0px 40px;
+    margin-bottom: 45px;
+}
+footer{
+    background-color: rgba(0,0,0,0.5);
+    font-size: 12px;
+    padding-right: 45px;
+    padding-left: 45px;
+}
+#msg{
+    justify-self: flex-end;
+}
+#button{
+    border: none;
+    padding: 12px 20px;
+    border-right: 2px solid silver;
+    border-left: 2px solid silver;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+input{
+    border-radius: 10%;
+    border: 2px solid silver;
+    background: silver;
+    color: #100b11;
+    cursor: pointer;
+}
+.champ{
+    flex-direction: column;
+}
