@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Teko&display=swap"> 
     <title>Heróis | Champions Legion | FanMade</title>
     <script>
         function aviso(){
@@ -16,13 +16,16 @@
         function dica(){
             alert("->Para uma melhor experiência, ative a opção de reprodução automática de mídia no seu navegador!");
         }
+        function notes(){
+            alert('O que há de novo?\n->Criação da página dos heróis faltantes;\n->Ajuste nas pérolas do Brando;\n->Mudança na descrição do Chifre do Rei da Selva;\n->Ajuste na formatação de ícones que aparecem alinhados verticalmente(na build, por exemplo);\n->Pequena alteração na descrição do "Como Usar a Build" do Nivan;\n->Correção em uma das "Curiosidades" do Scorpius;\n->Transferência do Keth para a área da selva;\n->Pequena alteração de pontuação nas "Curiosidades" de: Xenon, Morus e Idony;\n->Adição de nova curiosidade da Christine;\n->Pequena alteração na aba de "Curiosidades" da Renée.\n->Página principal agora está com boa formatação para celulares.');
+        }
     </script>
 </head>
 <body>
     <header>
-        <img src="images/logo-cl.png" alt="Logo do Champions Legion">
+        <img src="images/logo-cl.png" alt="Logo do Champions Legion" id="logo">
         <div id="msg">
-            <p>VERSÃO 1.0<div id="button" style="border-right: none; margin-right: 0%;"><input type="button" onclick="aviso()" value="AVISOS"></div><div id="button" style="margin-left: 0%;"><input type="button" onclick="dica()" value="DICAS"></div>Este é um site feito por fã em homenagem ao Champions Legion!</p>
+            <p>VERSÃO 2.0</p><div id="button" style="border-right: none; margin-right: 0%; width: 10.6%;"><input type="button" onclick="notes()" value="PATCH NOTES"></div><div id="button" style="border-right: none; margin-right: 0%; margin-left: 0%; width: 6.1%;"><input type="button" onclick="aviso()" value="AVISOS"></div><div id="button" style="margin-left: 0%; width: 5.4%;"><input type="button" onclick="dica()" value="DICAS"></div><p>Este é um site feito por fã em homenagem ao Champions Legion!</p>
         </div>
     </header>
     <main>
@@ -32,9 +35,12 @@
             <div class="champ"><a href="paginas/christine.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/christine.png" alt="christine portrait"></a><h3>Christine</h3></div>
             <div class="champ"><a href="paginas/clawdia.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/clawdia.png" alt="clawdia portrait"></a><h3>Clawdia</h3></div>
             <div class="champ"><a href="paginas/garsea.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/garsea.png" alt="garsea portrait"></a><h3>Garsea</h3></div>
+            <div class="champ"><a href="paginas/keth.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/keth.png" alt="keth portrait"></a><h3>Keth</h3></div>
             <div class="champ"><a href="paginas/raven.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/raven.png" alt="raven portrait"></a><h3>Raven</h3></div>
-            <div class="champ"><a href="paginas/styx.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/styx.png" alt="styx portrait"></a><h3>Styx</h3></div>
-            <div class="champ"><a href="paginas/zoya.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/zoya.png" alt="zoya portrait"></a><h3>Zoya</h3></div>
+            <div class="l2" style="width: 37.6%;">
+                <div class="champ" style="width:44.5%;"><a href="paginas/styx.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/styx.png" alt="styx portrait"></a><h3>Styx</h3></div>
+                <div class="champ" style="width: 44.5%;"><a href="paginas/zoya.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/zoya.png" alt="zoya portrait"></a><h3>Zoya</h3></div>
+            </div>
         </div>
         <h2>&diams; MAGO(MEIO)</h2>
         <div class="imgs">
@@ -67,17 +73,16 @@
                 <div class="champ"><a href="paginas/renee.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/renee.png" alt="renee portrait"></a><h3>Renée</h3></div>
             </div>
         <h2>&diams; TANK</h2>
-        <div class="imgs" style="width: 693px;">
-            <div class="champ"><a href="paginas/memphis.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/memphis.png" alt="memphis portrait"></a><h3>Memphis</h3></div>
-            <div class="champ"><a href="paginas/mina.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/mina.png" alt="mina portrait"></a><h3>Mina</h3></div>
-            <div class="champ"><a href="paginas/joy.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/joy.png" alt="joy portrait"></a><h3>Joy</h3></div>
+        <div class="imgs" style="width: 54%;">
+            <div class="champ" style="width: 29%;"><a href="paginas/memphis.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/memphis.png" alt="memphis portrait"></a><h3>Memphis</h3></div>
+            <div class="champ" style="width: 29%;"><a href="paginas/mina.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/mina.png" alt="mina portrait"></a><h3>Mina</h3></div>
+            <div class="champ" style="width: 29%;"><a href="paginas/joy.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/joy.png" alt="joy portrait"></a><h3>Joy</h3></div>
         </div>
         <h2>&diams; GUERREIRO</h2>
         <div class="imgs">
             <div class="champ"><a href="paginas/brando.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/brando.png" alt="brando portrait"></a><h3>Brando</h3></div>
             <div class="champ"><a href="paginas/brunhild.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/brunhild.png" alt="brunhild portrait"></a><h3>Brunhild</h3></div>
             <div class="champ"><a href="paginas/cleo.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/cleo.png" alt="cleo portrait"></a><h3>Cleo</h3></div>
-            <div class="champ"><a href="paginas/keth.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/keth.png" alt="keth portrait"></a><h3>Keth</h3></div>
             <div class="champ"><a href="paginas/kyouya.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/kyouya.png" alt="kyouya portrait"></a><h3>Kyouya</h3></div>
             <div class="champ"><a href="paginas/lars.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/lars.png" alt="lars portrait"></a><h3>Lars</h3></div>
             <div class="champ"><a href="paginas/mikal.html" rel="next" hreflang="pt-br"><img src="images/heroes_portrait/mikal.png" alt="mikal portrait"></a><h3>Mikal</h3></div>
@@ -93,8 +98,8 @@
         </ul>
     </main>
     <footer>
-        <p>O site em que este se baseia, bem como todo o universo de Champions Legion, <br> é de propriedade de <strong>Studio Trois Private Limited</strong></p>
-        <audio controls loop autoplay>
+        <p style="font-size: 0.9vw;">O site em que este se baseia, bem como todo o universo de Champions Legion, <br> é de propriedade de <strong>Studio Trois Private Limited</strong></p>
+        <audio controls loop autoplay style="width: 50%;">
             <source src="audios/champions_legion_ost.mp3" type="audio/mpeg">
             <source src="audios/champions_legion_ost.ogg" type="audio/ogg">
             <p>Não foi possível carregar o áudio.</p>
