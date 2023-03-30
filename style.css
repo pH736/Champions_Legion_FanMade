@@ -1,0 +1,129 @@
+@font-face {
+    font-family: CopperplateGothicBoldRegular;
+    src: url(Copperplate\ Gothic\ Bold\ Regular.ttf);
+}
+body, header, #button{
+    background-color: #100b11;
+}
+header, .imgs, footer, #msg, .champ, .l2{
+    display: flex;
+    align-items: center;
+}
+header, #msg, .l2{
+    flex-direction: row;
+}
+header, .imgs, footer, .l2{
+    justify-content: space-between;
+}
+header, h1, h2, footer, input, h3{
+    font-family: CopperplateGothicBoldRegular;
+}
+header, footer{
+    color: silver;
+}
+h2, hr, h3{
+    background: linear-gradient(0deg,#f9e4b7,#d2a86c 67.77%,#bd9554 80.02%,#a8833d);
+}
+h2, h3{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: "";
+}
+.imgs, footer{
+    flex-flow: row wrap;
+}
+a:hover, input:hover{
+    filter: brightness(125%);
+}
+p{
+    font-size: 1.2vw;
+}
+img{
+    width: 100%;
+}
+#logo{
+    width: 8.1%;
+}
+.imgs{
+    padding-left: 3.9%;
+    padding-right: 3.9%;
+    align-content: space-evenly;
+    margin: 0%;
+    width: 92.3%;
+}
+body{
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    margin: 0%;
+}
+header{
+    padding: 0.73% 1.63%;
+}
+h1{
+    color: #c2a6a6;
+    font-size: 3.65vw;
+    text-align-last: center;
+}
+h2{
+    margin-bottom: 2.75%;
+    margin-left: 1.6%;
+    font-size: 2.55vw;
+}
+h3{
+    font-size: 2.2vw;
+    margin-top: 2%;
+}
+hr{
+    width: 92.15%; 
+    height: 1.5px;
+    margin: 3.8%;
+}
+li{
+    font-family: "Teko";
+    font-size: 1.5vw;
+}
+li::marker{
+    color: #bd9554;
+}
+a{
+    text-decoration: none;
+    color: #d2a86c;
+}
+a:hover{
+    text-decoration: underline;
+}
+main{
+    margin: 0% 2.9%;
+    margin-bottom: 3%;
+}
+footer{
+    background-color: rgba(0,0,0,0.5);
+    padding-right: 3.5%;
+    padding-left: 3.5%;
+}
+#msg{
+    justify-self: flex-end;
+    width: 82.7%;
+}
+#button{
+    border: none;
+    padding: 1.1% 2%;
+    border-right: 2px solid silver;
+    border-left: 2px solid silver;
+    margin-right: 1%;
+    margin-left: 1%;
+    font-size: 1vw;
+}
+input{
+    border-radius: 10%;
+    border: 2px solid silver;
+    background: silver;
+    color: #100b11;
+    cursor: pointer;
+    width: 100%;
+    font-size: 0.76em; 
+}
+.champ{
+    flex-direction: column;
+    width: 16.9%;
+}
